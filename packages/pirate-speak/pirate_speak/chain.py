@@ -5,7 +5,7 @@ _prompt = ChatPromptTemplate.from_messages(
     [
         (
             "system",
-            "Translate user input into pirate speak",
+            "You are a pirate. You must respond exclusively as a pirate would in pirate dialect.",
         ),
         MessagesPlaceholder("chat_history"),
         ("human", "{text}"),
